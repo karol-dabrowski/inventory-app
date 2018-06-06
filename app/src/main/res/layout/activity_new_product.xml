@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".NewProductActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="@string/new_product_name"
+            style="@style/CategoryStyle" />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/new_product_form_label_width"
+            android:layout_weight="2"
+            android:paddingLeft="@dimen/new_product_form_label_padding_left"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/product_name"
+                android:hint="@string/new_product_name_hint"
+                android:inputType="textCapWords"
+                style="@style/EditorFieldStyle" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="@string/new_product_price"
+            style="@style/CategoryStyle" />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/new_product_form_label_width"
+            android:layout_weight="2"
+            android:paddingLeft="@dimen/new_product_form_label_padding_left"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/product_price"
+                android:hint="0.00"
+                android:inputType="numberDecimal"
+                style="@style/EditorFieldStyle" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="@string/new_product_quantity"
+            style="@style/CategoryStyle" />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/new_product_form_label_width"
+            android:layout_weight="2"
+            android:paddingLeft="@dimen/new_product_form_label_padding_left"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/product_quantity"
+                android:hint="10"
+                android:inputType="number"
+                style="@style/EditorFieldStyle" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="@string/new_product_supplier_name"
+            style="@style/CategoryStyle" />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/new_product_form_label_width"
+            android:layout_weight="2"
+            android:paddingLeft="@dimen/new_product_form_label_padding_left"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/product_supplier_name"
+                android:hint="@string/new_product_supplier_name_hint"
+                android:inputType="text"
+                style="@style/EditorFieldStyle" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="@string/new_product_supplier_phone"
+            style="@style/CategoryStyle" />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/new_product_form_label_width"
+            android:layout_weight="2"
+            android:paddingLeft="@dimen/new_product_form_label_padding_left"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/product_supplier_phone"
+                android:hint="@string/new_product_supplier_phone_hint"
+                android:inputType="text"
+                style="@style/EditorFieldStyle" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
