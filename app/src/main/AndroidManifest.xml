@@ -18,13 +18,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".NewProductActivity"
-            android:label="New product"
+            android:name=".EditorActivity"
+            android:label="@string/new_product_label"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+        <provider
+            android:name=".data.ProductProvider"
+            android:authorities="pl.karoldabrowski.inventoryapp"
+            android:exported="false" />
     </application>
 
 </manifest>

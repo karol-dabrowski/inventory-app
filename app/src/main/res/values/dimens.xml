@@ -2,4 +2,15 @@
 <resources>
     <dimen name="new_product_form_label_padding_left">4dp</dimen>
     <dimen name="new_product_form_label_width">0dp</dimen>
+
+    <dimen name="plus_button_margin">16dp</dimen>
+
+    <dimen name="sell_button_text_size">16sp</dimen>
+    <dimen name="list_item_padding">16dp</dimen>
+    <dimen name="list_item_price_width">0dp</dimen>
+    <dimen name="list_item_quantity_width">0dp</dimen>
+    <dimen name="list_item_data_space_width">0dp</dimen>
+    <dimen name="list_item_data_details_space_margin_top">4dp</dimen>
+
+    <dimen name="call_button_margin_top">16dp</dimen>
 </resources>

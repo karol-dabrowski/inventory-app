@@ -1,36 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2016 The Android Open Source Project
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-          http://www.apache.org/licenses/LICENSE-2.0
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
--->
-<!-- Layout for a single list item in the list of pets -->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="@dimen/activity_margin">
+    android:orientation="horizontal"
+    android:padding="@dimen/list_item_padding">
 
-    <TextView
-        android:id="@+id/name"
+    <LinearLayout
+        android:layout_width="@dimen/list_item_data_space_width"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            tools:text="Name"
+            android:id="@+id/name"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#2B3D4D"  />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/list_item_data_details_space_margin_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                tools:text="20.00"
+                android:id="@+id/price"
+                android:gravity="center_horizontal"
+                android:layout_width="@dimen/list_item_price_width"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#5f7b94" />
+
+            <TextView
+                tools:text="15"
+                android:id="@+id/quantity"
+                android:gravity="center_horizontal"
+                android:layout_width="@dimen/list_item_quantity_width"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#5f7b94" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:text="@string/sell_button_text"
+        android:id="@+id/add_button"
+        android:focusable="false"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/sell_button_text_size"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
-        android:textAppearance="?android:textAppearanceMedium"
-        android:textColor="#2B3D4D"  />
+        android:background="@drawable/buttonshape" ></Button>
 
-    <TextView
-        android:id="@+id/summary"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif"
-        android:textAppearance="?android:textAppearanceSmall"
-        android:textColor="#AEB6BD"  />
 </LinearLayout>

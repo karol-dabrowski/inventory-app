@@ -7,13 +7,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TableLayout
-        android:id="@+id/products_table"
+    <ListView
+        android:id="@+id/list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:stretchColumns="1">
+        android:layout_height="match_parent"/>
 
-    </TableLayout>
+    <TextView
+        android:id="@+id/empty_view"
+        android:gravity="center_horizontal"
+        android:text="@string/empty_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
@@ -21,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/plus_button_margin"
         android:backgroundTint="@color/colorPrimary"
         android:src="@drawable/ic_plus"/>
 

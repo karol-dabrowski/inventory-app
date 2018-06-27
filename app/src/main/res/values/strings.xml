@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Inventory App</string>
     <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="new_product_label">New product</string>
 
     <string name="new_product_name">Name</string>
     <string name="new_product_price">Price</string>
@@ -11,4 +13,34 @@
     <string name="new_product_name_hint">Product</string>
     <string name="new_product_supplier_name_hint">John</string>
     <string name="new_product_supplier_phone_hint">123456789</string>
+
+    <string name="editor_insert_product_failed">Error with saving product</string>
+    <string name="editor_insert_product_successful">Product saved</string>
+    <string name="editor_update_product_failed">Error with updating product</string>
+    <string name="editor_update_product_successful">Product updated</string>
+    <string name="editor_delete_product_failed">Error with deleting product</string>
+    <string name="editor_delete_product_successful">Product deleted</string>
+
+    <string name="empty_text">Nothing found. Click plus button to add new product.</string>
+
+    <string name="product_name_is_required_text">Product name is required</string>
+    <string name="product_name_is_too_short_text">Product name is too short</string>
+    <string name="product_name_is_too_long_text">Product name is too long</string>
+    <string name="product_price_is_required_text">Product price is required</string>
+    <string name="product_price_must_be_positive_text">Product price must be positive number</string>
+    <string name="product_quantity_is_required_text">Product quantity is required</string>
+    <string name="product_supplier_name_is_required_text">Supplier name is required</string>
+    <string name="product_supplier_phone_is_required_text">Supplier phone is required</string>
+    <string name="product_supplier_phone_must_have_9_digits_text">Supplier phone must have 9 digits</string>
+
+    <string name="product_quantity_updated">Quantity updated</string>
+    <string name="product_quantity_can_not_be_updated">Quantity cannot be updated</string>
+
+    <string name="sell_button_text">SELL</string>
+    <string name="call_button_text">CALL</string>
+
+    <string name="delete_dialog_msg">Delete this product?</string>
+    <string name="delete_dialog_confirm">Delete</string>
+    <string name="delete_dialog_cancel">Cancel</string>
+
 </resources>
