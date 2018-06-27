@@ -1,2 +1,2 @@
 # Inventory App
-Android Basic Nanodegree - project 8
+Android Basic Nanodegree - project 9
